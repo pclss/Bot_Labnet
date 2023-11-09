@@ -9,7 +9,7 @@ logging.basicConfig(
 )
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await context.bot.send_message(chat_id=update.effective_chat.id, text="Oi, eu sou o PESCBot! Em que posso ajudar?")
+    await context.bot.send_message(chat_id=update.effective_chat.id, text="Oi, eu sou o LabnetBot! Em que posso ajudar?")
 
 async def disciplinas(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Segue a tabela de disciplinas!")
@@ -22,7 +22,7 @@ if __name__ == '__main__':
     application = ApplicationBuilder().token("6899390825:AAFKeEFUqLEsjh4Cx33xXnLk5fOj1fGRxNA").build()
     
     ###################### START HANDLER ######################
-    start_handler = CommandHandler('pesc', start)
+    start_handler = CommandHandler('labnet', start)
     application.add_handler(start_handler)
 
     ###################### OTHER HANDLERS ######################
