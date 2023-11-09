@@ -19,7 +19,7 @@ async def unknown(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await context.bot.send_message(chat_id=update.effective_chat.id, text="Desculpe, não entendi o comando!")
 
 if __name__ == '__main__':
-    application = ApplicationBuilder().token("6899390825:AAFKeEFUqLEsjh4Cx33xXnLk5fOj1fGRxNA").build()
+    application = ApplicationBuilder().token("6670993541:AAF3RWiOd5XvBZ66dMNObXGxutJ3HhTAtsA").build()
     
     ###################### START HANDLER ######################
     start_handler = CommandHandler('labnet', start)
